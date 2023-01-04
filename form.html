@@ -4,73 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Welcome</title>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h3 style="color: white;">Form | Module 4 | Programming Hero</h3>
+    </header>
     <nav>
         <ul>
-          <li><a href="index.html">Media</a></li>
-          <li><a href="table.html">Table</a>
-              <ul class="dropdown">
-                  <li>Group</li>
-                  <li>Grammar</li>
-                  <li>Subjective</li>
-                  <li>liCommon</li></li>
-              </ul>
-          </li>
-          <li><a href="form.html">Form</a></li>
-      </ul>
-  </nav>
-  <h2>Welcome to Our Hospital</h2>
-  <form action="">
-    <label for="name">Your Name
-        <input type="text" placeholder="Your Name">
-    </label>
-    <label for="email">Your Email
-        <input type="email" placeholder="Your Email Address">
-    </label>
-
-    <label for="mobile">Mobile Number
-        <input type="number" placeholder="Your Phone Number">
-    </label>
-
-    <fieldset>
-        <legend>Pick your desired service</legend>
-        <label for="doc-consultation">
-            <input type="radio" name="service" id="doc-consultation">Doctor Consultation
+            <li><a href="form.html">Form</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="index.html">Table</a></li>
+            <li><a href="#">Dropdown</a>
+            <ul class="dropdown">
+                <li><a href="#">Form</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Table</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+    <h2>Form Practice</h2>
+    <form action="">
+        <label for="name">Your Name :
+            <input type="text" name="Customer Data" id="name" placeholder="Type Your Name">
+        </label>
+        <label for="email">Your Email :
+            <input type="text" name="Customer Data" id="email" placeholder="Your Email Address">
+        </label>
+        <label for="mobile">Your Mobile :
+            <input type="number" name="Customer Data" id="mobile" placeholder="Your Phone Number">
         </label>
 
-        <label for="OPD">
-            <input type="radio" name="service" id="OPD">OPD Consultation
-        </label>
-
-        <label for="IPD">
-            <input type="radio" name="service" id="IPD">IPD
-        </label>
-        
-    </fieldset>
-
-    <fieldset>
-        <legend>Select your desired doctor</legend>
-        <label for="Dr. Rafiqul Islam">
-            <input type="checkbox" name="doctor" id="Dr. Rafiqul Islam">Dr. Rafiqul Islam
-        </label>
-        <label for="Dr. Ramesh Chandra">
-            <input type="checkbox" name="doctor" id="Dr. Ramesh Chandra">Dr. Ramesh Chandra
-        </label>
-        <label for="Dr. Abdul Awal">
-            <input type="checkbox" name="doctor" id="Dr. Abdul Awal">Dr. Abdul Awal
-        </label>
-        
-    </fieldset>
-    <fieldset>
-        <legend>Send us your query</legend>
-        <textarea name="" id="" cols="100" rows="3"></textarea>
-    </fieldset>
-    <input type="reset" value="Reset">
-    <input type="submit" value="Submit">
-
-  </form>
+        <fieldset>
+            <legend>Please Pick Your Desired Product</legend>
+            <label for="doctor">
+                <input type="radio" name="service" id="doctor">Doctor
+            </label>
+            <label for="nurse">
+                <input type="radio" name="service" id="nurse">Nurse
+            </label>
+            <label for="medicine">
+                <input type="radio" name="service" id="medicine">Medicine
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Extra Services</legend>
+            <label for="ambulance">
+                <input type="checkbox" name="extra service" id="ambulance">Ambulance
+            </label>
+            <label for="ward-boy">
+                <input type="checkbox" name="extra service" id="ward-boy">Ward Boy
+            </label>
+            <label for="injection">
+                <input type="checkbox" name="extra service" id="injection">Injection
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Send us a query</legend>
+            <textarea name="query" id="query" cols="120" rows="2"></textarea>
+        </fieldset>
+        <input type="reset" value="Reset Form">
+        <input type="submit" value="Submit Now">
+    </form>
 </body>
 </html>

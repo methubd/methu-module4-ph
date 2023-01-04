@@ -1,0 +1,62 @@
+table{
+    border-collapse: collapse;
+}
+td,th,tr{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+h2{
+    background-color: rgb(243, 119, 17);
+    text-align: center;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+nav > ul{
+    display: flex;
+    background-color: rgb(235, 235, 235);
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav li{
+    list-style: none;
+    padding: 10px;
+
+}
+
+nav li:hover{
+    background-color: rgb(243, 119, 17);
+}
+
+/* Nested Dropdown */
+nav li .dropdown{
+    display: none;
+    position: absolute;
+    background-color: rgb(229, 229, 229);
+}
+
+nav li:hover > .dropdown{
+    display: block;
+}
+
+header{
+    background-image: url(images/header-photo.jpg);
+    padding: 50px;
+    background-size: cover;
+    background-blend-mode: multiply;
+    
+
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
