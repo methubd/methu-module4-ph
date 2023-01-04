@@ -1,0 +1,81 @@
+header{
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: rgb(228, 228, 228);
+    background-blend-mode: multiply;
+
+}
+
+nav > ul{
+    display: flex;
+    background-color: rgb(215, 215, 215);
+}
+nav li{
+    list-style: none;
+    margin-left: 10px;
+    padding: 0 5px;
+}
+nav li:hover{
+    background-color: rgb(255, 170, 1);
+    border-radius: 5px;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+h3{
+    text-align: center;
+    background-color: rgb(255, 170, 1);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px 0 10px;
+}
+h3:hover{
+    background-color: rgb(254, 148, 0);
+}
+
+/* Nested NV */
+nav li .dropdown{
+    display: none;
+    position: absolute;
+    background-color: rgb(165, 165, 165);
+    padding-left: 5x;
+    border-radius: 5px;
+}
+nav li:hover .dropdown{
+    display: block;
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+article{
+    background-color: rgb(215, 215, 215);
+    padding: 30px;
+    border-radius: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+}
+
+article p{
+    font-weight: 400;
+    font-style: italic;
+}
+article h2{
+    color: rgb(237, 100, 2);
+}
+table{
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid rgb(70, 70, 70);
+    padding: 10px;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+}
